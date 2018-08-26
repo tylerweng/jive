@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.4.RELEASE")
+    }
+}
+
+apply plugin: 'eclipse'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("com.fasterxml.jackson.core:jackson-core:2.9.6")
+    compile("com.fasterxml.jackson.core:jackson-databind:2.9.6")
+    compile("javax.servlet:javax.servlet-api:4.0.1")
+    compile("org.springframework:spring-core:5.0.8.RELEASE")
+    compile("org.springframework:spring-messaging:5.0.8.RELEASE")
+    compile("org.springframework:spring-websocket:5.0.8.RELEASE")
+    compile("org.springframework:spring-webmvc:5.0.8.RELEASE")
+    compile("org.springframework.boot:spring-boot:2.0.4.RELEASE")
+    compile("org.springframework.boot:spring-boot-autoconfigure:2.0.4.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-websocket:2.0.4.RELEASE")
+}
+
+
