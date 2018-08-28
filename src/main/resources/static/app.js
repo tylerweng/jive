@@ -10,7 +10,7 @@ function setConnected(connected) {
         $("#conversation").hide();
     }
     $("#greetings").html("");
-
+}
 
 function connect() {
     var socket = new SockJS('/gs-guide-websocket');
